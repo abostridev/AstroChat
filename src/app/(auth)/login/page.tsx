@@ -6,7 +6,7 @@ export default function LoginPage() {
           Sign in to AstroChat
         </h1>
 
-        <button className="w-full rounded-md bg-white py-2 text-black">
+        <button className="w-full rounded-md bg-black py-2 text-white hover:bg-gray-900">
           Continue
         </button>
       </div>
