@@ -14,6 +14,22 @@ export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center bg-black text-white">
       <Welcome username="AstroUser" />
+      <Status user={{ name: "Alex", online: true }} />
+
     </main>
   )
 }
+
+type User = {
+  name: string
+  online: boolean
+}
+
+function Status({ user }: { user: User }) {
+  return (
+    <p>
+      {user.name} is {user.online ? "online 🟢" : "offline 🔴"}
+    </p>
+  )
+}
+
